@@ -1,48 +1,30 @@
-🎯 Number Guessing Game (Go)
+🎯 Number Guessing Game (CLI)
 
-This is a simple CLI game written in Go where the player has three chances to guess a randomly selected number between 1 and 10.
+This is a simple CLI game written in Go where the player has to guess a randomly generated number within a limited number of attempts.  
 
 ---
 
  🕹️ How It Works
+You select a difficulty level: Easy, Medium, or Hard.
+The program generates a random number within a range depending on the level. 
+Easy, (1-10)
+Medium, (1-20)
+Hard, (1-40)
 
-- The program randomly picks a number between 1 and 10
-- You get three tries to guess the correct number
-- After each guess:
-  - If your guess is too low, it will let you know
-  - If your guess is too high, it will tell you
-  - If you guess correctly, the game ends and congratulates you
+You get a limited number of attempts(5) to guess the number. 
+The game gives hints; Too high, too low, or correct
 
----
-
- What I Learned
-
-Through building this project, I learned how to:
-
-- Take keyboard input in Go using `fmt.Scan`
-- Work with Boolean logic and conditional statements
-- Use Go packages like:
-  - `math/rand` for generating random numbers
-  - `time` to seed randomness properly
-
----
-
-🚀 Why I Built This
-
-This was one of my first Go projects and a great way to practice:
-- Structuring a small CLI program
-- Working with logic and control flow
-- Building confidence with Go syntax
-
----
-
-📂 Run It Yourself
+What I Learned
+How to use keyboard input in Go.
+Basics of Boolean logic.
+Working with Go's math/rand and time packages.
+Structuring CLI programs with conditions, loops, and functions.
+Using Git, GitHub, and Git Bash to track and publish my code
 
 To run the program:
-
-1. Make sure you have Go installed
-2. Clone this repo or download the `.go` file
-3. Run it in your terminal:
+Make sure you have Go installed
+Clone this repo or download the `.go` file
+Run it in your terminal:
 
 ```bash
 go run NumbersGuessingGame.go
